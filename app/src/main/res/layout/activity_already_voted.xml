@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlreadyVotedActivity"
+    android:background="@drawable/background_intro"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="130dp"
+        android:id="@+id/alreadyVoted"
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/alrvt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have already voted for this election, please wait for next election to begin.."
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/hButton"
+        android:layout_gravity="center"
+        style="@android:style/Widget.Button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_btn"
+        android:text="Go to Home"
+        android:textAlignment="center"
+        android:textColor="#420478"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:onClick="pass"/>
+
+</LinearLayout>
